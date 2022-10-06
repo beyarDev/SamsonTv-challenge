@@ -1,6 +1,7 @@
+#Task A creating 50 Cubes
 import bpy
 from random import randint
-#Task A creating 50 Cubes
+
 for mesh in bpy.data.meshes:
     bpy.data.meshes.remove(mesh)
 alphabet = "abcdefghijklmnopqrstuvwxyz"
@@ -37,9 +38,5 @@ numberOfMaterilas = 0
 for material in bpy.data.materials:
     numberOfMaterilas += 1
 
-
-
 print("Number of objects " + str(NumberOfObjects), "Number of materials " + str(numberOfMaterilas), "Number of vertices " + str(vertices))
 print("total number = " + str(NumberOfObjects+numberOfMaterilas + vertices))
-#Task B
-
